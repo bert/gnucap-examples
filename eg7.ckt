@@ -1,0 +1,37 @@
+eg7.ckt
+* MULTILPLY TWO NUMBERS
+
+.subckt multiplier 1 2 3
+*                        1 = input A (voltage)
+*                        2 = input B (voltage)
+*                        3 = output  (voltage)
+* Note that there are scaling factors on inputs and output to keep
+* diodes in the exponential region.
+.model dexp D EG=0 CJ=0 FC=0 gparallel=0
+G1 0 4 1 0 1e-3
+D1 4 0 dexp
+G2 0 5 2 0 1e-3
+D2 5 0 dexp
+I3 0 6 1
+D3 6 0 dexp
+E1 7 0 4 0 1
+E2 8 7 5 0 1
+E3 8 9 6 0 1
+V1 9 10 0
+D4 10 0 dexp
+H1 3 0 V1 1e6
+.ends
+
+V1 1 0 0
+V2 2 0 0.5
+X1 1 2 3 multiplier
+R1 3 0 1
+
+.options vmin=-1e5 vmax=1e5
+.print dc V(3) V(2) V(E1.X1) V(E2.X1) V(E3.X1)
+.!rm eg7_1.dat eg7_2.dat eg7_3.dat
+.dc v1 0 1 0.01 > eg7_1.dat QUIET
+.modify V2=100
+.dc v1 0 1 0.01 > eg7_2.dat QUIET
+.dc v1 0 1000 1 > eg7_3.dat QUIET
+.end
