@@ -1,0 +1,16 @@
+eg6.ckt
+* DIODE CASCADE
+
+.model 1N414 D IS=2e-14
+
+Vcc  1   0   5
+Dx   1   2   1N414
+Dy   2   3   1N414
+Dz   3   4   1N414
+Rd1  2   0   1k
+Rd2  3   0   1k
+Rd3  4   0   1k
+
+.print dc v(10) v(20) v(30)
+.dc Vcc 0 5 0.5 >eg6.dat
+.end
