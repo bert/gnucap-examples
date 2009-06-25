@@ -1,0 +1,4 @@
+* Spice netlister for gnetlist
+Vsupply 0 1 DC 10V
+R1 0 1 1k
+.END
