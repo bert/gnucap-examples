@@ -1,0 +1,11 @@
+eg10.ckt
+* MAINS PULSE HITS MAGNETISING RIG
+V1 1 0 generator 1
+R1 0 2 850m
+L1 1 2 6mH
+.options vmin=-1e5 vmax=1e5
+.generator freq=50 width=10m ampl=339.4
+.print tran I(L1) V(1)
+.op
+.tran 1e-4 30e-3 >eg10.dat
+.end
