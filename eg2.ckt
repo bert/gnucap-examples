@@ -1,0 +1,16 @@
+eg2.ckt
+* NETWORK OF RESISTORS AND VOLTAGE SOURCES
+
+V1	2	1	10
+V2	4	3	5
+V3	0	3	3
+R1	1	2	220
+R2	2	3	4.7k
+R3	4	5	3.3k
+R4	3	5	10k
+R5	0	1	22k
+R6	0	5	15k
+
+.print dc v(1) v(2) v(3) v(4) v(5)
+.dc
+.end
