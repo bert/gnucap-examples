@@ -20,5 +20,5 @@ R5 5 6 1e4
 * Look at the voltage at node 2 and the impedance looking into node 2
 
 .print dc v(2) z(2)
-.dc
+.dc > eg3.dat
 .end

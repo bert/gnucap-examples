@@ -4,5 +4,5 @@ eg5.ckt
 I1 0 1 2.0001
 I2 1 0 2.0
 .print dc v(1) i(I1) i(I2)
-.dc
+.dc > eg5.dat
 .end
