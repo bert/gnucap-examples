@@ -1,4 +1,6 @@
 #!/bin/bash
 gnucap -b $1.ckt
-gnuplot << load $1.gnuplot
+if test -f $1.gnuplot; then 
+  gnuplot < $1.gnuplot
+fi
 
