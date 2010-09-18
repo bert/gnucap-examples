@@ -11,6 +11,6 @@ Rd1  2   0   1k
 Rd2  3   0   1k
 Rd3  4   0   1k
 
-.print dc v(10) v(20) v(30)
+.print dc v(2) v(3) v(4)
 .dc Vcc 0 5 0.5 >eg6.dat
 .end
