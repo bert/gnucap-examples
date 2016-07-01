@@ -7,5 +7,5 @@ L1 1 2 6mH
 .generator freq=50 width=10m ampl=339.4
 .print tran I(L1) V(1)
 .op
-.tran 1e-4 30e-3 >eg10.dat
+.tran 1e-4 30e-3 > eg10.dat
 .end
