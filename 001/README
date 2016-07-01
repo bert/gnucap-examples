@@ -17,7 +17,7 @@ unlike version 3) nodes must be numbered in gnucap.
 In order to load this circuit into the simulator the following command
 would be used:
 
-	gnucap eg1.ckt
+	gnucap -b eg1.ckt
 
 What happens is that gnucap loads in the circuit, finds no commands to execute
 (since this file has no command lines) and so enters interactive mode with
