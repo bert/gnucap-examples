@@ -34,22 +34,22 @@ V(2)
 T 10000 700 5 10 1 1 0 0 1
 description=GNUCAP tutorial schematic
 B 9400 1400 7600 9600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+C 9800 8400 1 0 0 spice-directive-1.sym
+{
+T 9900 8700 5 10 0 1 0 0 1
+device=directive
+T 9900 8800 5 10 1 1 0 0 1
+refdes=A2
+T 9900 8500 5 10 1 1 0 0 1
+value=.dc > eg1.dat
+}
 C 9800 9200 1 0 0 spice-directive-1.sym
 {
 T 9900 9500 5 10 0 1 0 0 1
 device=directive
 T 9900 9600 5 10 1 1 0 0 1
-refdes=A2
-T 9900 9300 5 10 1 1 0 0 1
-value=.dc > eg1.dat
-}
-C 9800 10000 1 0 0 spice-directive-1.sym
-{
-T 9900 10300 5 10 0 1 0 0 1
-device=directive
-T 9900 10400 5 10 1 1 0 0 1
 refdes=A1
-T 9900 10100 5 10 1 1 0 0 1
+T 9900 9300 5 10 1 1 0 0 1
 value=.print dc v(2)
 }
 C 5200 5300 1 90 0 resistor-2.sym
@@ -71,4 +71,13 @@ T 3100 5250 5 10 0 0 180 0 1
 footprint=none
 T 3900 5550 5 10 1 1 0 0 1
 value=DC 10V
+}
+C 9800 10000 1 0 0 spice-directive-1.sym
+{
+T 9900 10300 5 10 0 1 0 0 1
+device=directive
+T 9900 10400 5 10 1 1 0 0 1
+refdes=A0
+T 9900 10100 5 10 1 1 0 0 1
+value=.title eg1.ckt
 }
