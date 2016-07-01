@@ -1,12 +1,12 @@
 eg6.ckt
 * DIODE CASCADE
 
-.model 1N414 D IS=2e-14
+.model 1N4148 D IS=2e-14
 
 Vcc  1   0   5
-Dx   1   2   1N414
-Dy   2   3   1N414
-Dz   3   4   1N414
+Dx   1   2   1N4148
+Dy   2   3   1N4148
+Dz   3   4   1N4148
 Rd1  2   0   1k
 Rd2  3   0   1k
 Rd3  4   0   1k
