@@ -40,25 +40,25 @@ netname=0
 C 2900 3600 1 0 0 gnd-1.sym
 C 5100 4300 1 0 1 vdc-1.sym
 {
-T 5200 4850 5 10 1 1 180 6 1
+T 5200 4950 5 10 1 1 0 0 1
 refdes=V2
 T 4400 5150 5 10 0 0 0 6 1
 device=VOLTAGE_SOURCE
 T 4400 5350 5 10 0 0 0 6 1
 footprint=none
-T 5200 5050 5 10 1 1 180 6 1
-value=DC 10.2V
+T 5200 4750 5 10 1 1 0 0 1
+value=10.2
 }
 C 3300 4300 1 0 1 vdc-1.sym
 {
-T 3400 4850 5 10 1 1 180 6 1
+T 3400 4950 5 10 1 1 0 0 1
 refdes=V1
 T 2600 5150 5 10 0 0 0 6 1
 device=VOLTAGE_SOURCE
 T 2600 5350 5 10 0 0 0 6 1
 footprint=none
-T 3400 5050 5 10 1 1 180 6 1
-value=DC 10.0V
+T 3400 4750 5 10 1 1 0 0 1
+value=10.0
 }
 N 3000 5500 3000 5700 4
 {
