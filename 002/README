@@ -26,25 +26,4 @@ Run this with:
 	quit
 
 Note that this is about the limit of what can be done with these two
-components. Other components that offer further possibilities are
-the current source (any component with a name that begins with ``I''
-is a current source) and the dependent sources:
-
-	first letter 	output 	input
-	of name 	type 	type
-	-----------------------------------------
-	E		voltage	voltage
-	F		current	current
-	G		current	voltage
-	H		voltage	current
-	-----------------------------------------
-
-Each of these has a gain value expressing the relation between its
-output and its input and they allow the modeling of linear amplifiers
-and other such devices. As mentioned above, none of these components
-understand time nor can they be used to represent a nonlinear device.
-Thus, any network constructed from the components that have been seen
-so far will be reducible to a Thevenin or Norton equivalent circuit
-when considered from the point of view of one particular node and the
-ground node 0.
-
+components.
