@@ -1,9 +1,0 @@
-* Spice netlister for gnetlist
-Vcc 0 1 DC 5V
-Dx 1 2 1N414
-Dy 2 3 1N414
-Dz 3 4 1N414
-Rd1 0 2 1k
-Rd2 0 3 1k
-Rd3 0 4 1k
-.END
