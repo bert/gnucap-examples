@@ -1,6 +1,7 @@
+# Example 004.
+
 Things That Can Go Wrong.
 
-	---------------------------------------------------------------------
 	VOLTAGE SOURCES IN PARALLEL
 	
 	V1 1 0 10.0
@@ -8,7 +9,6 @@ Things That Can Go Wrong.
 	.print dc v(1) i(V1) i(V2)
 	.dc
 	.end
-	----------------------------------------------------------------------
 
 Here we have V1 and V2 both driving the same node at about 10 volts.
 Actually, V2 is very slightly higher than 10 volts so there will be
