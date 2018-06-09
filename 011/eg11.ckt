@@ -1,0 +1,25 @@
+. title eg11.ckt
+
+* CAPACITOR PULSE FOR MAGNETISING RIG
+
+.model switch SW VT=150 VH=150 RON=0.1 ROFF=1Meg
+
+.model diode D
+
+V1 1 0 340
+R1 1 2 500
+C1 2 0 2000u IC=299.8
+S1 2 3 2 0 switch OFF
+R2 3 4 850m
+L1 4 0 6mH IC=0
+D1 5 3 diode
+R3 5 0 5
+C2 5 0 200u
+
+.options vmin=-1e5 vmax=1e5
+
+.print tran I(L1) V(2) V(3) V(5)
+
+.tran 0 20e-3 1e-6 UIC
+
+.end
