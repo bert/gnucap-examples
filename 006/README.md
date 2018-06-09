@@ -1,4 +1,6 @@
-Nonlinear Devices -- Diodes.
+# Example 006.
+
+Nonlinear Devices - Diodes.
 
 All of the previous circuits have been linear. This is to say that all
 the devices (voltage sources, current sources, dependent source and
@@ -20,11 +22,8 @@ At this point, we take the step into nonlinear circuits which do NOT
 obey superposition and do NOT scale. The most elementary nonlinear
 component is a diode.
 
-	---------------------------------------------------------------------
-	DIODE CASCADE
-
+	.title DIODE CASCADE
 	.model 1N4148 D IS=2e-14
-
 	Vcc 1 0 5
 	Dx 1 10 1N4148
 	Dy 10 20 1N4148
@@ -32,11 +31,9 @@ component is a diode.
 	Rd1 10 0 1k
 	Rd2 20 0 1k
 	Rd3 30 0 1k
-
 	.print dc v(10) v(20) v(30)
-	.dc Vcc 0 5 0.5 >eg6.dat
+	.dc Vcc 0 5 0.5
 	.end
-	----------------------------------------------------------------------
 
 You can run this example and look at the results like so:
 
