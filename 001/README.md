@@ -1,9 +1,6 @@
-The simplest possible circuit file: single resistor driven by a voltage source.
+# Example 001.
 
-----------------------------------------------------------------------
-Vsupply 0 2 10
-R1 0 2 1k
-----------------------------------------------------------------------
+The simplest possible circuit file: single resistor driven by a voltage source.
 
 This file defines a circuit containing two nodes and two components.
 The components have the names ``Vsupply'' and ``R1'', the first letter of
