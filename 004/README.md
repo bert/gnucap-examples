@@ -2,8 +2,7 @@
 
 Things That Can Go Wrong.
 
-	VOLTAGE SOURCES IN PARALLEL
-	
+	.title VOLTAGE SOURCES IN PARALLEL
 	V1 1 0 10.0
 	V2 1 0 10.2
 	.print dc v(1) i(V1) i(V2)

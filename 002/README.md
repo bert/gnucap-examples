@@ -4,10 +4,11 @@ Networks of Resistors and Sources
 
 The previous example covers enough concepts to model arbitrarily complex
 networks of resistors and sources. These are essentially linear circuits
-that have no relation to time. A more elaborate example is presented below:
+that have no relation to time.
 
-NETWORK OF RESISTORS AND VOLTAGE SOURCES
+A more elaborate example is presented below:
 
+	.title NETWORK OF RESISTORS AND VOLTAGE SOURCES
 	V1 2 1 10
 	V2 4 3 5
 	V3 0 3 3

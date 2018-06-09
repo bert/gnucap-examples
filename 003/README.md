@@ -22,7 +22,7 @@ when considered from the point of view of one particular node and the
 ground node 0.
 
 
-	NETWORK OF RESISTORS AND DEPENDENT SOURCES
+	.title NETWORK OF RESISTORS AND DEPENDENT SOURCES
 	*
 	* Reduce this complicated collection of dependencies
 	* down to a single Thevenin equivalent between node 2 and
