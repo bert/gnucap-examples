@@ -1,27 +1,27 @@
+# Example 003.
+
 Other components that offer further possibilities are the current source
 (any component with a name that begins with "I" is a current source) and the
 dependent sources:
 
-	first letter 	output 	input
-	of name 	type 	type
-	-----------------------------------------
-	E		voltage	voltage
-	F		current	current
-	G		current	voltage
-	H		voltage	current
-	-----------------------------------------
+| first letter of name | output type | input type |
+| -------------------- | ----------- | ---------- |
+| E                    | voltage     | voltage    |
+| F                    | current     | current    |
+| G                    | current     | voltage    |
+| H                    | voltage     | current    |
 
 Each of these has a gain value expressing the relation between its
 output and its input and they allow the modeling of linear amplifiers
 and other such devices. As mentioned above, none of these components
 understand time nor can they be used to represent a nonlinear device.
+
 Thus, any network constructed from the components that have been seen
 so far will be reducible to a Thevenin or Norton equivalent circuit
 when considered from the point of view of one particular node and the
 ground node 0.
 
 
-	---------------------------------------------------------------------
 	NETWORK OF RESISTORS AND DEPENDENT SOURCES
 	*
 	* Reduce this complicated collection of dependencies
@@ -45,7 +45,6 @@ ground node 0.
 	.print dc v(2) z(2)
 	.dc
 	.end
-	----------------------------------------------------------------------
 
 Notice that this example file contains some lines that begin with a dot.
 These are command lines and behave exactly like the commands you type
@@ -94,3 +93,4 @@ saved them too; secondly, your extra line was inserted into the file
 before the line containing component "R3", this is caused by the
 argument on the "build" command and allows you to insert your build
 lines where you want them.
+
