@@ -1,14 +1,13 @@
+# Example 005.
+
 Current Sources in Series.
 
-	---------------------------------------------------------------------
-	CURRENT SOURCES IN SERIES
-	
+	.title CURRENT SOURCES IN SERIES
 	I1 0 1 2.0001
 	I2 1 0 2.0
 	.print dc v(1) i(I1) i(I2)
 	.dc
 	.end
-	----------------------------------------------------------------------
 
 The case of putting two current sources in series is much the same
 concept as two voltage sources in parallel. However notice that gnucap
