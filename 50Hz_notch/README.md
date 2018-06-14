@@ -2,5 +2,5 @@
 
 Frequency response.
 
-![50Hz_notch requency response](50Hz_notch.png)
+![50Hz_notch frequency response](50Hz_notch.png)
 
