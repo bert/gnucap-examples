@@ -1,0 +1,19 @@
+.TITLE Inductive Low Pass Filter.
+
+* retrieved from https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/
+
+V1 1 0 ac 1 sin
+L1 1 2 3
+Rload 2 0 1k
+
+.OP
+
+.PRINT AC VDB(2)
+
+*     FROM      TO   STEP
+.TRAN 0.00001   0.2  0.0001
+
+*       #STEPS/DECADE FROM   TO 
+.AC DEC 20            1      10000
+
+.END
