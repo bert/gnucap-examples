@@ -1,4 +1,4 @@
-.TITLE Testing a rectifier bridge
+.TITLE Testing a bridge of rectifier diodes
 
 .MODEL 1N4004 D
 

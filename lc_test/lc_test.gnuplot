@@ -3,7 +3,7 @@ set term png
 
 # setup graph
 set output "lc_test_V.png"
-set title "Testing a rectifier bridge - Transient response"
+set title "Testing a bridge of rectifier diodes - Transient response"
 
 # setup Y-axis
 set grid ytics lt 1 lw 1 lc rgb "#bbbbbb"

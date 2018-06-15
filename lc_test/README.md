@@ -1,4 +1,4 @@
-# Testing a rectifier bridge.
+# Testing a bridge of rectifier diodes.
 
 Transient response.
 
