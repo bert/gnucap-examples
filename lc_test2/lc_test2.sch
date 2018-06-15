@@ -1,7 +1,7 @@
 v 20110115 2
 C 0 0 0 0 0 title-B.sym
 T 10000 700 5 10 1 1 0 0 1
-description=Testing a rectifier bridge with a buffer capacitor
+description=Testing a bridge of rectifier diodes with a buffer capacitor
 T 13900 100 5 10 1 1 0 0 1
 author=Bert Timmerman
 T 10000 400 5 10 1 1 0 0 1

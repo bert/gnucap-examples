@@ -1,4 +1,4 @@
-.TITLE Testing a rectifier bridge with buffer capacitor
+.TITLE Testing a bridge of rectifier diodes with buffer capacitor
 
 .MODEL 1N4004 D
 
