@@ -1,0 +1,21 @@
+.TITLE Testing a rectifier bridge
+
+.MODEL 1N4004 D
+
+V1 4 3 SIN(0 24 50Hz)
+
+D1 0 2 1N4004
+D2 2 1 1N4004
+D3 0 4 1N4004
+D4 4 1 1N4004
+RDROP 2 3 1.1
+RL 1 0 1000
+
+
+.OPTION gmin 1u
+
+.PRINT TRAN V(1) I(RL)
+
+.TRAN 0 0.1 .001
+
+.END
