@@ -1,0 +1,24 @@
+* Circuit Description
+
+* transistor model statement
+.model BCxxx NPN (Is=1.8104e-15 Bf=100 Vaf=35V)
+
+VCE 3 0 0V
+R1 3 2 .0001
+IB 0 1 10u
+
+* device under test
+
+Q1 2 1 0 0 BCxxx
+
+* Print analysis results
+.PRINT DC V(2) I(R1)
+
+* vary Vce from 0V to 10V in steps of 10mV
+.DC VCE 0V 10V 10mV
+
+* vary Vce from 0V to 10V in steps of 10mV,
+* vary Ib from 1 uA to 10 uA in stpes of 1 uA
+*.DC VCE 0V 10V 100mV IB 1u 10u 1u
+
+.end
