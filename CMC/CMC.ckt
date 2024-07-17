@@ -1,0 +1,28 @@
+* Net Filter - Common Mode Choke - Load side
+
+V1 6 0 AC 1 SIN(0 0.1 100)
+
+R1 0 1 50
+R2 1 2 50
+R3 1 3 50
+R4 2 3 1Meg
+R5 4 3 10m
+R6 5 6 100m
+
+C1 2 4 100n
+
+L1 5 2 1m
+L2 5 3 1m
+K1 L1 L2 0.99
+
+.PRINT OP Iter(0) V(1)
+
+.PRINT AC VDB(1)
+
+*     FROM      TO   STEP
+.TRAN 0.001   0.2  0.0001
+
+*       #STEPS/DECADE FROM   TO 
+.AC DEC 100           .01      100Meg
+
+.end
